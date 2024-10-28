@@ -1,0 +1,112 @@
+/* styles.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+.cadre {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.cadre:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.pdf-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pdf-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.pdf-link:hover {
+    background-color: #d0e3fc;
+}
+
+.pdf-link i {
+    font-size: 30px; /* Taille de l'icône PDF */
+    margin-right: 10px;
+    color: #e63946; /* Couleur de l'icône PDF */
+}
+
+.folder-info {
+    display: flex;
+    align-items: center;
+    background-color: #dff9e1; /* Couleur de fond pour le dossier */
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.folder-info:hover {
+    background-color: #c9e6b3; /* Couleur au survol */
+}
+
+.folder-info i {
+    font-size: 30px; /* Taille de l'icône de dossier */
+    margin-right: 10px;
+    color: #28a745; /* Couleur verte pour l'icône de dossier */
+}
+
+.folder-info span {
+    font-size: 1.1em;
+    color: #333;
+}
+.folder-info a {
+    text-decoration: none; /* Supprime le soulignement du lien */
+    color: #333; /* Couleur du texte du lien */
+    transition: color 0.2s ease; /* Transition de couleur */
+}
+
+.folder-info a:hover {
+    color: #28a745; /* Couleur au survol */
+}
+
+/* Adaptation pour les écrans mobiles */
+@media (max-width: 480px) {
+    .cadre {
+        padding: 15px;
+    }
+
+    .pdf-link span,
+    .folder-info span {
+        font-size: 1em;
+    }
+
+    .pdf-link i,
+    .folder-info i {
+        font-size: 24px; /* Ajustement de la taille de l'icône pour mobile */
+    }
+}
